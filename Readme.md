@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Денис Горбунов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2643487).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 * Сайт: [Учебный проект Седона] (https://gorbunoff-denis.github.io/2643487-sedona-2/).
 
 ---

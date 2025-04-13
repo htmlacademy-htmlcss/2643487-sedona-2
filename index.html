@@ -6,10 +6,49 @@
     <title>Заголовок страницы</title>
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <div class="container">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <header class="header" data-test="header">
+        <nav class="header__nav">
+          <a class="header__nav-logo">
+            <img src="#" alt="Изображение логотипа">
+          </a>
+          <ul class="header__nav-list reset-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link reset-link">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link reset-link">О Седоне</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link reset-link">Гостиницы</a>
+            </li>
+          </ul>
+          <ul class="header__nav-user-list reset-list">
+            <li class="header__nav-user-item">
+              <a class="header__nav-user-link">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="header__nav-user-item">
+              <a class="header__nav-user-link">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+            <li class="header__nav-user-item">
+              <a class="header__nav-button button-link">
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main" data-test="main">
 
-      </div>
-    </header>
+      </main>
+      <footer class="footer" data-test="footer">
+
+      </footer>
+    </div>
   </body>
 </html>

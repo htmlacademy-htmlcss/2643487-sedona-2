@@ -152,28 +152,109 @@
                 <option value="popular">Сначала популярные</option>
                 <option value="comfortable">Сначала комфортные</option>
               </select>
-              <ul class="catalog__filter-toggles list-reset">
-                <li class="catalog__filter-toggles-item">
-                  <input type="radio" class="catalog__filter-toggle" name="catalog-filter" id="filter-table" checked>
-                  <label class="catalog__filter-trigger" for="filter-table"><span class="visually-hidden">Таблицей</span></label>
-                </li>
-                <li class="catalog__filter-toggles-item">
-                  <input type="radio" class="catalog__filter-toggle" name="catalog-filter" id="filter-card" checked>
-                  <label class="catalog__filter-trigger" for="filter-card"><span class="visually-hidden">Карточкой</span></label>
-                </li>
-                <li class="catalog__filter-toggles-item">
-                  <input type="radio" class="catalog__filter-toggle" name="catalog-filter" id="filter-list" checked>
-                  <label class="catalog__filter-trigger" for="filter-list"><span class="visually-hidden">Списком</span></label>
-                </li>
-              </ul>
+              <div class="catalog__view-buttons">
+                <a class="catalog__view-trigger link-reset" href="catalog.html?view=tile">
+                  <img src="#" alt="Иконка таблицы">
+                  <span class="visually-hidden">Показать таблицей</span>
+                </a>
+                <a class="catalog__view-trigger link-reset" href="catalog.html?view=card">
+                  <img src="#" alt="Иконка карточки">
+                  <span class="visually-hidden">Показать карточкой</span>
+                </a>
+                <a class="catalog__view-trigger link-reset" href="catalog.html?view=list">
+                  <img src="#" alt="Иконка списка">
+                  <span class="visually-hidden">Показать списком</span>
+                </a>
+              </div>
             </div>
           </div>
-          <ul class="filter__hotels-list list-reset">
-            <li class="filter__hotels-item hotel-card">
+          <ul class="catalog__hotels-list list-reset">
+            <li class="catalog__hotels-item hotel-card">
               <a class="hotel-card__link link-reset" href="#">
-                <img class="hotel-card__image" src="#" alt="Фотография госитницы">
+                <img class="hotel-card__image" src="#" alt="Фотография гостиницы">
               </a>
-              <p class="hotel-card__title">Amara Resort & Spa"</p>
+              <a class="hotel-card__title" href="#">
+                <h3 class="hotel-card__title">Amara Resort &amp; Spa</h3>
+              </a>
+              <p class="hotel-card__type">Гостиница</p>
+              <p class="hotel-card__price">От 4000 ₽</p>
+              <a class="hotel-card__detail button-link link-reset" href="#">Подробнее</a>
+              <button class="hotel-card__button button-reset" type="button">В избранное</button>
+              <p class="hotel-card__stars hotel-card__stars--four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+              <p class="hotel-card__rating">Рейтинг: 8,5</p>
+            </li>
+
+            <li class="catalog__hotels-item hotel-card">
+              <a class="hotel-card__link link-reset" href="#">
+                <img class="hotel-card__image" src="#" alt="Фотография гостиницы">
+              </a>
+              <a class="hotel-card__title" href="#">
+                <h3 class="hotel-card__title">Villas at Poco Diablo</h3>
+              </a>
+              <p class="hotel-card__type">Гостиница</p>
+              <p class="hotel-card__price">От 5000 ₽</p>
+              <a class="hotel-card__detail button-link link-reset" href="#">Подробнее</a>
+              <button class="hotel-card__button hotel-card__button--checked button-reset" type="button">В избранном</button>
+              <p class="hotel-card__stars hotel-card__stars--four">
+                <span class="visually-hidden">4 звезды</span>
+              </p>
+              <p class="hotel-card__rating">Рейтинг: 9,2</p>
+            </li>
+            
+            <li class="catalog__hotels-item hotel-card">
+              <a class="hotel-card__link link-reset" href="#">
+                <img class="hotel-card__image" src="#" alt="Фотография гостиницы">
+              </a>
+              <a class="hotel-card__title" href="#">
+                <h3 class="hotel-card__title">Desert Quail Inn</h3>
+              </a>
+              <p class="hotel-card__type">Гостиница</p>
+              <p class="hotel-card__price">От 2500 ₽</p>
+              <a class="hotel-card__detail button-link link-reset" href="#">Подробнее</a>
+              <button class="hotel-card__button button-reset" type="button">В избранное</button>
+              <p class="hotel-card__stars hotel-card__stars--three">
+                <span class="visually-hidden">3 звезды</span>
+              </p>
+              <p class="hotel-card__rating">Рейтинг: 6,9</p>
+            </li>
+
+            <li class="catalog__hotels-item hotel-card">
+              <a class="hotel-card__link link-reset" href="#">
+                <img class="hotel-card__image" src="#" alt="Фотография гостиницы">
+              </a>
+              <a class="hotel-card__title" href="#">
+                <h3 class="hotel-card-title">GreenTree Inn</h3>
+              </a>
+              <p class="hotel-card__type">Гостиница</p>
+              <p class="hotel-card__price">От 3000 ₽</p>
+              <a class="hotel-card__detail button-link link-reset" href="#">Подробнее</a>
+              <button class="hotel-card__button button-reset" type="button">В избранное</button>
+              <p class="hotel-card__stars hotel-card__stars--two">
+                <span class="visually-hidden">2 звезды</span>
+              </p>
+              <p class="hotel-card__rating">Рейтинг: 5,0</p>
+            </li>
+          </ul>
+          <ul class="catalog__pagination list-reset">
+            <li class="catalog__pagination-item">
+              <a class="catalog__pagination-button pagination-button-current">1</a>
+            </li>
+            <li class="catalog__pagination-item">
+              <a class="catalog__pagination-button" href="#">2</a>
+            </li>
+            <li class="catalog__pagination-item">
+              <a class="catalog__pagination-button" href="#">3</a>
+            </li>
+            <li class="catalog__pagination-item">
+              <a class="catalog__pagination-button" href="#">4</a>
+            </li>
+            <li class="catalog__pagination-item">
+              <span class="catalog__pagination-button catalog__pagination-button--pass">...</span>
+            </li>
+            <li class="catalog__pagination-item">
+              <a class="catalog__pagination-button" href="#">10</a>
             </li>
           </ul>
         </section>

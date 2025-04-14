@@ -142,7 +142,40 @@
           </form>
         </section>
         <section class="catalog" data-test="catalog">
-          
+          <div class="catalog__filter">
+            <h2 class="visually-hidden">Каталог гостиниц</h2>
+            <p class="catalog__title">Найдено гостиниц: <span>4</span></p>
+            <div class="catalog__filter-wrapper">
+              <select class="catalog__filter-sorting" name="catalog__filter-sorting">
+                <option value="cheap">Сначала дешёвые</option>
+                <option value="expensive">Сначала дорогие</option>
+                <option value="popular">Сначала популярные</option>
+                <option value="comfortable">Сначала комфортные</option>
+              </select>
+              <ul class="catalog__filter-toggles list-reset">
+                <li class="catalog__filter-toggles-item">
+                  <input type="radio" class="catalog__filter-toggle" name="catalog-filter" id="filter-table" checked>
+                  <label class="catalog__filter-trigger" for="filter-table"><span class="visually-hidden">Таблицей</span></label>
+                </li>
+                <li class="catalog__filter-toggles-item">
+                  <input type="radio" class="catalog__filter-toggle" name="catalog-filter" id="filter-card" checked>
+                  <label class="catalog__filter-trigger" for="filter-card"><span class="visually-hidden">Карточкой</span></label>
+                </li>
+                <li class="catalog__filter-toggles-item">
+                  <input type="radio" class="catalog__filter-toggle" name="catalog-filter" id="filter-list" checked>
+                  <label class="catalog__filter-trigger" for="filter-list"><span class="visually-hidden">Списком</span></label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <ul class="filter__hotels-list list-reset">
+            <li class="filter__hotels-item hotel-card">
+              <a class="hotel-card__link link-reset" href="#">
+                <img class="hotel-card__image" src="#" alt="Фотография госитницы">
+              </a>
+              <p class="hotel-card__title">Amara Resort & Spa"</p>
+            </li>
+          </ul>
         </section>
         <section class="subscribe subscribe--catalog" data-test="subscribe">
           <h2 class="visually-hidden">Подписка на рассылку</h2>

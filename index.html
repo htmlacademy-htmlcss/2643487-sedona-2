@@ -4,46 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Добро пожаловать в Седону</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <div class="container">
       <header class="header" data-test="header">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <nav class="header__nav">
-          <a class="header__nav-logo">
-            <img src="#" alt="Изображение логотипа">
+        <nav class="header__navigation navigation">
+          <a class="navigation__logo">
+            <img src="./images/header/header-logo.svg" width="140" height="70" alt="Логотип городка Седона">
           </a>
-          <ul class="header__nav-list reset-list">
-            <li class="header__nav-item">
-              <a class="header__nav-link header__nav-link--active reset-link">Главная</a>
+          <ul class="navigation__list list-reset">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active link-reset">Главная</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link reset-link">О Седоне</a>
+            <li class="navigation__item">
+              <a class="navigation__link link-reset">О Седоне</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link reset-link" href="catalog.html">Гостиницы</a>
+            <li class="navigation__item">
+              <a class="navigation__link link-reset" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
-          <ul class="header__nav-user-list reset-list">
-            <li class="header__nav-user-item">
-              <a class="header__nav-user-link">
+          <ul class="navigation__user-list list-reset">
+            <li class="navigation__user-item">
+              <a class="navigation__user-link">
+                <img src="./images/header/search.svg" width="20" height="20" alt="Image">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="header__nav-user-item">
-              <a class="header__nav-user-link">
+            <li class="navigation__user-item">
+              <a class="navigation__user-link">
+                <img src="./images/header/heart.svg" width="20" height="20" alt="Image">
                 <span class="visually-hidden">Избранное</span>
+                <span class="navigation__user-favourites">12</span>
               </a>
             </li>
-            <li class="header__nav-user-item">
-              <a class="header__nav-button button-link link-reset">
+            <li class="navigation__user-item">
+              <a class="navigation__button button-link link-reset">
                 Хочу сюда!
               </a>
             </li>
           </ul>
         </nav>
       </header>
-      <main class="main-index" data-test="main">
+      <!-- <main class="main-index" data-test="main">
         <section class="hero" data-test="hero">
           <div class="hero__img-wrapper">
             <img src="#" alt="Фотография горной местности с приветственной надписью">
@@ -138,7 +142,8 @@
         <a class="footer__logo-link link-reset" href="htmlacademy.ru">
           <span class="visually-hidden">Логотип разработчика</span>
         </a>
-      </footer>
+      </footer> -->
     </div>
   </body>
 </html>
+

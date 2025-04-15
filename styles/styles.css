@@ -1,0 +1,401 @@
+@font-face {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  color: #333;
+  background-color: #f2f2f2;
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  border: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link-reset {
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  text-decoration: none;
+}
+
+.button-reset {
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: .67em 0;
+  font-size: 2em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: #0000;
+}
+
+abbr[title] {
+  border-bottom: none;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="button"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="reset"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring {
+  outline: 1px dotted buttontext;
+}
+
+[type="button"]:-moz-focusring {
+  outline: 1px dotted buttontext;
+}
+
+[type="reset"]:-moz-focusring {
+  outline: 1px dotted buttontext;
+}
+
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted buttontext;
+}
+
+fieldset {
+  padding: .35em .75em .625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  white-space: normal;
+  max-width: 100%;
+  padding: 0;
+  display: table;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"], [type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button {
+  height: auto;
+}
+
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: textfield;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template, [hidden] {
+  display: none;
+}
+
+.container {
+  background-color: #fff;
+  flex-direction: column;
+  width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 0 0 15px #0000004d;
+}
+
+.header {
+  width: 1200px;
+  padding: 0 70px;
+  position: relative;
+}
+
+.navigation {
+  grid-template-rows: 64px;
+  grid-template-columns: 140px auto 268px;
+  display: grid;
+  position: relative;
+}
+
+.navigation__logo img {
+  z-index: 10;
+  font-size: 0;
+  position: relative;
+}
+
+.navigation__list {
+  flex-flow: wrap;
+  margin-left: 28px;
+  display: flex;
+}
+
+.navigation__item {
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 16px;
+  display: flex;
+}
+
+.navigation__link {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  position: relative;
+}
+
+.navigation__link[href]:hover {
+  color: #756157;
+}
+
+.navigation__link[href]:active {
+  color: #7561574d;
+}
+
+.navigation__link--active:after {
+  content: "";
+  background: #756157;
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  bottom: -21px;
+}
+
+.navigation__user-list {
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 268px;
+  display: flex;
+}
+
+.navigation__user-link {
+  flex-direction: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 12px;
+  display: flex;
+  position: relative;
+}
+
+.navigation__user-link:hover path {
+  fill: #756157;
+}
+
+.navigation__user-link:active path {
+  fill: #756157;
+  fill-opacity: .3;
+}
+
+.navigation__user-favourites {
+  color: #fff;
+  background-color: #7db54f;
+  border-radius: 10px;
+  min-width: 20px;
+  max-width: 20px;
+  max-height: 20px;
+  padding: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  overflow: hidden;
+}
+
+.navigation__button {
+  color: #fff;
+  background-color: #756157;
+  width: 160px;
+  max-width: 160px;
+  min-height: 36px;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.button-link {
+  text-transform: uppercase;
+  border-radius: 4px;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.button-link:hover {
+  background-color: #615048;
+}
+
+.button-link:active {
+  color: #ffffff4d;
+  background-color: #756157;
+}

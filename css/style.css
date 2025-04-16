@@ -283,7 +283,7 @@ img {
   left: 0;
   right: 0;
   background-color: transparent;
-  background-image: url("../../img/svg/hero-mask.svg");
+  background-image: url("../img/svg/hero-mask.svg");
 }
 
 .hero__greeting {

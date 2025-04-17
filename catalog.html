@@ -4,39 +4,43 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Добро пожаловать в Седону</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <div class="container">
       <header class="header" data-test="header">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <nav class="header__nav">
-          <a class="header__nav-logo">
-            <img src="#" alt="Изображение логотипа">
+        <nav class="header__navigation navigation">
+          <a class="navigation__logo">
+            <img src="./img/svg/header-logo.svg" width="140" height="70" alt="Логотип городка Седона">
           </a>
-          <ul class="header__nav-list reset-list">
-            <li class="header__nav-item">
-              <a class="header__nav-link reset-link" href="index.html">Главная</a>
+          <ul class="navigation__list list-reset">
+            <li class="navigation__item">
+              <a class="navigation__link link-reset" href="index.html">Главная</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link reset-link">О Седоне</a>
+            <li class="navigation__item">
+              <a class="navigation__link link-reset">О Седоне</a>
             </li>
-            <li class="header__nav-item">
-              <a class="header__nav-link header__nav-link--active reset-link">Гостиницы</a>
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--active link-reset">Гостиницы</a>
             </li>
           </ul>
-          <ul class="header__nav-user-list reset-list">
-            <li class="header__nav-user-item">
-              <a class="header__nav-user-link">
+          <ul class="navigation__user-list list-reset">
+            <li class="navigation__user-item">
+              <a class="navigation__user-link">
+                <img src="./img/sprite/header-search-icon.svg" width="20" height="20" alt="Image">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="header__nav-user-item">
-              <a class="header__nav-user-link">
+            <li class="navigation__user-item">
+              <a class="navigation__user-link">
+                <img src="./img/sprite/header-fovourites-icon.svg" width="20" height="20" alt="Image">
                 <span class="visually-hidden">Избранное</span>
+                <span class="navigation__user-favourites">12</span>
               </a>
             </li>
-            <li class="header__nav-user-item">
-              <a class="header__nav-button button-link link-reset">
+            <li class="navigation__user-item">
+              <a class="navigation__button button-link link-reset">
                 Хочу сюда!
               </a>
             </li>
@@ -60,7 +64,7 @@
                   <span class="visually-hidden">Гостинницы</span>
                 </a>
               </li>
-            </ul>    
+            </ul>
           <form class="filter__catalog" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter__infra">
               <legend class="filter__legend">Инфраструктура:</legend>
@@ -202,7 +206,7 @@
               </p>
               <p class="hotel-card__rating">Рейтинг: 9,2</p>
             </li>
-            
+
             <li class="catalog__hotels-item hotel-card">
               <a class="hotel-card__link link-reset" href="#">
                 <img class="hotel-card__image" src="#" alt="Фотография гостиницы">
@@ -269,8 +273,8 @@
             </label>
             <button class="subscribe__button button-reset" type="submit">Подписаться</button>
           </form>
-        </section> 
-      </main>  
+        </section>
+      </main>
       <footer class="footer" data-test="footer">
         <h2 class="visually-hidden">Контакты</h2>
         <ul class="footer__social-list list-reset">

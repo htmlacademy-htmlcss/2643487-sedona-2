@@ -1117,6 +1117,18 @@ img {
   margin: 0;
 }
 
+.catalog__view-toggle--grid {
+  background: url(../img/sprite/catalog-toggle-table-icon.svg) no-repeat center;
+}
+
+.catalog__view-toggle--card {
+  background: url(../img/sprite/catalog-toggle-card-icon.svg) no-repeat center;
+}
+
+.catalog__view-toggle--list {
+  background: url(../img/sprite/catalog-toggle-list-icon.svg) no-repeat center;
+}
+
 .catalog__view-toggle:hover, .catalog__view-toggle:active {
   border-color: #000000;
 }

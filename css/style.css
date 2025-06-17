@@ -671,13 +671,14 @@ img {
 }
 
 .footer__social-item {
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .footer__social-link {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .footer__social-link path {

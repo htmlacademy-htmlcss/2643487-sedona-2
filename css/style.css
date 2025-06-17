@@ -581,20 +581,20 @@ img {
   padding: 96px 0;
 }
 
-.subscribe_catalog {
+.subscribe__catalog {
   background-image: none;
   background-color: #ffffff;
 }
 
-.subscribe_catalog > .subscribe__title {
+.subscribe__catalog .subscribe__title {
   color: #000000;
 }
 
-.subscribe_catalog > .subscribe__subtitle {
+.subscribe__catalog .subscribe__subtitle {
   color: #333333;
 }
 
-.subscribe_catalog .subscribe__field {
+.subscribe__catalog .subscribe__field {
   background-color: #f2f2f2;
 }
 

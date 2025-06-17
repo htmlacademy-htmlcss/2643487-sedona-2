@@ -115,7 +115,8 @@ img {
   transition: color 0.3s, background-color 0.3s;
 }
 
-.button--brown:hover, .button--brown:focus-visible {
+.button--brown:hover,
+.button--brown:focus-visible {
   background-color: #615048;
 }
 
@@ -135,7 +136,8 @@ img {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.button--blue:hover, .button--blue:focus-visible {
+.button--blue:hover,
+.button--blue:focus-visible {
   background-color: #68a2ca;
 }
 
@@ -222,16 +224,19 @@ img {
   margin-left: 29px;
 }
 
-.navigation__item {
-  position: relative;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
+.navigation__link {
+  display: block;
   padding: 20px 16px;
+  color: #000000;
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  transition: color 0.3s;
 }
 
-.navigation__item--active::after {
+.navigation__link--active::after {
   position: absolute;
   content: "";
   width: calc(100% - 30px);
@@ -240,16 +245,6 @@ img {
   height: 2px;
   background: #756157;
   z-index: 10;
-}
-
-.navigation__link {
-  color: #000000;
-  position: relative;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: left;
-  transition: color 0.3s;
 }
 
 .navigation__link[href]:hover {
@@ -529,7 +524,7 @@ img {
 .advantages__service-name {
   color: #000000;
   position: relative;
-  margin: 174px auto 29px;
+  margin: 158px auto 29px;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -666,7 +661,7 @@ img {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 70px 45px;
+  padding: 45px 70px;
 }
 
 .footer__social-list {
@@ -689,7 +684,8 @@ img {
   transition: fill 0.3s;
 }
 
-.footer__social-link path:hover, .footer__social-link path:focus {
+.footer__social-link path:hover,
+.footer__social-link path:focus {
   fill: #68a2ca;
 }
 
@@ -710,7 +706,8 @@ img {
   transition: color 0.3s;
 }
 
-.footer__phones-link:hover, .footer__phones-link:focus {
+.footer__phones-link:hover,
+.footer__phones-link:focus {
   color: #756157;
 }
 
@@ -724,7 +721,8 @@ img {
   top: 1px;
 }
 
-.footer__logo-link:hover svg, .footer__logo-link:focus svg {
+.footer__logo-link:hover svg,
+.footer__logo-link:focus svg {
   fill: #756157;
 }
 
@@ -1004,10 +1002,12 @@ img {
 
 .filter__slider-toggle:focus {
   outline: 3px solid #83b3d3;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 .filter__slider-toggle:active {
   outline: 2px solid #83b3d3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 .filter__slider-toggle--min {
@@ -1123,18 +1123,19 @@ img {
 }
 
 .catalog__view-toggle--grid {
-  background: url(../img/sprite/catalog-toggle-table-icon.svg) no-repeat center;
+  background: url("../img/sprite/catalog-toggle-table-icon.svg") no-repeat center;
 }
 
 .catalog__view-toggle--card {
-  background: url(../img/sprite/catalog-toggle-card-icon.svg) no-repeat center;
+  background: url("../img/sprite/catalog-toggle-card-icon.svg") no-repeat center;
 }
 
 .catalog__view-toggle--list {
-  background: url(../img/sprite/catalog-toggle-list-icon.svg) no-repeat center;
+  background: url("../img/sprite/catalog-toggle-list-icon.svg") no-repeat center;
 }
 
-.catalog__view-toggle:hover, .catalog__view-toggle:active {
+.catalog__view-toggle:hover,
+.catalog__view-toggle:active {
   border-color: #000000;
 }
 
@@ -1159,20 +1160,34 @@ img {
 }
 
 .catalog__pagination-item {
-  min-width: 60px;
-  max-width: 120px;
-  min-height: 60px;
-  padding: 10px;
   color: #ffffff;
   background-color: #82b3d3;
   border-radius: 4px;
   border: 0 none;
-  overflow: hidden;
-  text-align: center;
-  cursor: pointer;
 }
 
-.catalog__pagination-item:not(:first-child):not(:nth-last-child(2)):hover, .catalog__pagination-item:not(:first-child):not(:nth-last-child(2)):focus-visible, .catalog__pagination-item:not(:first-child):not(:nth-last-child(2)):focus {
+.catalog__pagination-link {
+  display: block;
+  min-width: 60px;
+  max-width: 120px;
+  min-height: 60px;
+  border-radius: 4px;
+  border: 0 none;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.catalog__pagination-item:not(:first-child):not(:nth-last-child(2)):hover,
+.catalog__pagination-item:not(:first-child):not(:nth-last-child(2)):focus-visible,
+.catalog__pagination-item:not(:first-child):not(:nth-last-child(2)):focus {
   background-color: #68a2ca;
 }
 
@@ -1189,34 +1204,6 @@ img {
 .catalog__pagination-item--pass {
   color: #000000;
   background-color: transparent;
-}
-
-.catalog__pagination-button {
-  display: block;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 40px;
-  text-transform: uppercase;
-  margin: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.catalog__pagination-button > [href]:hover, .catalog__pagination-button > [href]:focus-visible, .catalog__pagination-button > [href]:focus {
-  background-color: #68a2ca;
-}
-
-.catalog__pagination-pass {
-  display: block;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 40px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 0 10px;
 }
 
 .hotel-card {
@@ -1355,7 +1342,8 @@ img {
   background-color: #e5e5e5;
 }
 
-.modal__close-button:focus, .modal__close-button:focus-visible {
+.modal__close-button:focus,
+.modal__close-button:focus-visible {
   outline: 3px solid #83b3d3;
 }
 

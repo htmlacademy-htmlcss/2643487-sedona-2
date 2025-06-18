@@ -173,6 +173,7 @@
 
     <dialog class= "modal" id="modal-search" aria-label="modal-search">
       <button class="modal__close-button button" type="button">
+        <span class="visually-hidden">Закрыть модальное окно</span>
         <svg class="modal__close-icon"
           width="15" height="15" viewBox="0 0 15 15" fill="none"
           role="img" aria-label="Закрыть модальное окно"
@@ -214,12 +215,10 @@
             </button>
           </div>
 
-          <label class="modal__label modal__label--child" for="child">Дети:
-            <div class="tooltip">
-              <button class="tooltip__button" type="button" aria-label="Информация о детях"></button>
-              <span class="tooltip__text" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-            </div>
-          </label>
+          <label class="modal__label modal__label--child" for="child">Дети:</label>
+          <button class="modal__tooltip-button" type="button" aria-label="Информация о детях">
+            <span class="modal__tooltip-text" role="tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </button>
           <div class="modal__count-box modal__count-box--child count-box">
             <button class="count-box__button" type="button">
               <svg class="count-box__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"

@@ -65,6 +65,7 @@ img {
 
 .no-spinners {
   appearance: none;
+  -moz-appearance: textfield;
 }
 
 .no-spinners::-webkit-outer-spin-button,

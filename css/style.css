@@ -40,14 +40,14 @@ body:has(dialog[open]) {
   overflow: hidden;
 }
 
-main {
-  flex-grow: 1;
-}
-
 img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+.page-main {
+  flex-grow: 1;
 }
 
 .visually-hidden {
@@ -282,18 +282,28 @@ img {
   left: 1px;
 }
 
-.navigation__user-link--search:hover {
+/* .navigation__user-link--search:hover {
+  opacity: 0.5;
+} */
+
+.navigation__user-link:hover {
   opacity: 0.5;
 }
+
+.navigation__user-link:active {
+  opacity: 0.3;
+}
+
+
 
 .navigation__user-link--favourites {
   position: relative;
   background: url("../img/sprite/header-fovourites-icon.svg") no-repeat center;
 }
 
-.navigation__user-link--favourites:hover {
+/* .navigation__user-link--favourites:hover {
   opacity: 0.5;
-}
+} */
 
 .navigation__user-favourites {
   position: absolute;
